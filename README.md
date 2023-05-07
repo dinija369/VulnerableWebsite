@@ -1,0 +1,2 @@
+# VulnerableWebsite
+This is a vulnerable website made with CSS, HTML, PHP and hosted on XAMPP. It contains vulnerabilities such as SQL injection, stored and reflected cross site scripting (XSS) and poor user input validation. The posted code version is vulnerable however the mitigation code is added as comments for each vulnerability. There is a comment on each page left top corner regarding what vulnerability it contains.
