@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="module.css" />
+  </head>
+  <body>
+    <h3>Poor Input Validation</h3>
+    <h1>Registration Form</h1>
+    <form method="post" action='module2.php'>
+      <fieldset>
+        <label for="name">Enter Your First Name: </label>
+        <input id="name" name="name" type="text" required />
+        <label for="surname">Enter Your Last Name: </label>
+        <input id="surname" name="surname" type="text" required />
+        <!--Vulnerable code-->
+        <label for="email">Enter Your Email: </label>
+        <input id="email" name="email" type="text" required/>
+        <label for="password">Create a New Password: </label>
+        <input id="password" name="password" type="text" required/>
+        <!--Fixed code by using regex for input validation
+        <label for="email">Enter Your Email: </label>
+        <input id="email" name="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+        <label for="password">Create a New Password: </label>
+        <input id="password" name="password" type="text" pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/>-->
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
